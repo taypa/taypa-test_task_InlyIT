@@ -12,4 +12,4 @@ class Base(DeclarativeBase):
     __abstract__=True
     @declared_attr.directive
     def __tablename__(cls) -> str:
-        return f"{cls.__name__.lower()}s"
+        return f"{cls.__name__.lower()}"
